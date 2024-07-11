@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Google Analytics Test Page f1 index</title>
+  <title>Google Analytics TEST F2</title>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-691MM32T5B"></script>
   <script>
@@ -14,10 +14,17 @@
 
     gtag('config', 'G-691MM32T5B');
   </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      if (!window.location.pathname.endsWith('/')) {
+        window.location.pathname += '/';
+      }
+    });
+  </script>
 </head>
 
 <body>
-  <h1>Google Analytics Test Page F1</h1>
+  <h1>Google Analytics Test Page F2</h1>
   <p>This is a simple HTML page for testing Google Analytics.</p>
 </body>
 
